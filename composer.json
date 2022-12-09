@@ -1,0 +1,20 @@
+{
+    "name": "jenya/my_router",
+    "description": "composer my_router",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jenya",
+            "email": "jenyaphphunter@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Learning\\Core\\": "core/src",
+            "Learning\\App\\": "app"
+        }
+    }
+}
