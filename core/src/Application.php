@@ -6,7 +6,7 @@ use Learning\Core\Interfaces\RouteInterface;
 
 class Application
 {
-    protected $router;
+    protected RouteInterface $router;
 
     public function __construct(RouteInterface $router)
     {
@@ -14,6 +14,7 @@ class Application
     }
     public function main()
     {
-        $this->router->route();
+        $callable = $this->router->route();
+        $callable();
     }
 }
