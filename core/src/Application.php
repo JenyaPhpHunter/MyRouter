@@ -18,5 +18,4 @@ class Application
         $callable = $this->router->route();
         $callable();
     }
-
 }
