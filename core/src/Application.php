@@ -12,9 +12,11 @@ class Application
     {
         $this->router = $router;
     }
+
     public function main()
     {
         $callable = $this->router->route();
         $callable();
     }
+
 }
